@@ -5,14 +5,14 @@ import PageOne from "../Pages/PageOne/index";
 import PageTwo from "../Pages/PageTwo/index";
 import styles from "./styles";
 
-const getImages = img => `url('assets/${img}')`;
+const getImages = img => `${process.env.PUBLIC_URL}/assets/${img}.jpg`;
 
 const imgs = [
-  getImages("realshots.jpg"),
-  getImages("init.jpg"),
-  getImages("add.jpg"),
-  getImages("complete.jpg"),
-  getImages("future.jpg")
+  getImages("realshots"),
+  getImages("init"),
+  getImages("add"),
+  getImages("complete"),
+  getImages("future")
 ];
 
 class App extends Component {
@@ -24,27 +24,42 @@ class App extends Component {
           <Parallax.Layer
             offset={1}
             speed={1}
-            style={{ backgroundImage: `${imgs[0]}`, ...styles.imgStyles }}
+            style={{
+              backgroundImage: `url('${imgs[0]}')`,
+              ...styles.imgStyles
+            }}
           />
           <Parallax.Layer
             offset={2}
             speed={1}
-            style={{ backgroundImage: `${imgs[1]}`, ...styles.imgStyles }}
+            style={{
+              backgroundImage: `url('${imgs[1]}')`,
+              ...styles.imgStyles
+            }}
           />
           <Parallax.Layer
             offset={3}
             speed={1}
-            style={{ backgroundImage: `${imgs[2]}`, ...styles.imgStyles }}
+            style={{
+              backgroundImage: `url('${imgs[2]}')`,
+              ...styles.imgStyles
+            }}
           />
           <Parallax.Layer
             offset={4}
             speed={1}
-            style={{ backgroundImage: `${imgs[3]}`, ...styles.imgStyles }}
+            style={{
+              backgroundImage: `url('${imgs[3]}')`,
+              ...styles.imgStyles
+            }}
           />
           <Parallax.Layer
             offset={5}
             speed={1}
-            style={{ backgroundImage: `${imgs[4]}`, ...styles.imgStyles }}
+            style={{
+              backgroundImage: `url('${imgs[4]}')`,
+              ...styles.imgStyles
+            }}
           />
 
           <Parallax.Layer

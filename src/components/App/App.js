@@ -3,17 +3,16 @@ import Parallax from "react-springy-parallax";
 
 import PageOne from "../Pages/PageOne/index";
 import PageTwo from "../Pages/PageTwo/index";
+
 import styles from "./styles";
 
-const getImages = img => `${process.env.PUBLIC_URL}/assets/${img}.jpg`;
+import realshots from "../assets/realshots.jpg";
+import init from "../assets/init.jpg";
+import add from "../assets/add.jpg";
+import complete from "../assets/complete.jpg";
+import future from "../assets/future.jpg";
 
-const imgs = [
-  getImages("realshots"),
-  getImages("init"),
-  getImages("add"),
-  getImages("complete"),
-  getImages("future")
-];
+const imgs = [realshots, init, add, complete, future];
 
 class App extends Component {
   render() {

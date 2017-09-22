@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "../../assets/logo.png";
 
 const PageOne = () => (
   <div className="absolute top-0">
     <header className="bg-gold sans-serif">
       <div className="mw9 center pa2 pt3-ns ph7-l">
-        <img src="assets/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
         <time className="f6 mb2 dib ttu tracked">
           <small>Created on 16th June, 2017</small>
         </time>

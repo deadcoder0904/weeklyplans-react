@@ -5,14 +5,7 @@ import PageOne from "../Pages/PageOne/index";
 import PageTwo from "../Pages/PageTwo/index";
 
 import styles from "./styles";
-
-import realshots from "../../assets/realshots.jpg";
-import init from "../../assets/init.jpg";
-import add from "../../assets/add.jpg";
-import complete from "../../assets/complete.jpg";
-import future from "../../assets/future.jpg";
-
-const imgs = [realshots, init, add, complete, future];
+import imgs from "./imgs";
 
 class App extends Component {
   render() {

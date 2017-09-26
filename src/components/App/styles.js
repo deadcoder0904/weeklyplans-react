@@ -6,8 +6,10 @@ const styles = {
     color: "white"
   },
   imgStyles: {
+    height: "100vh",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
+    backgroundPosition: "center center",
     backgroundSize: "cover"
   }
 };

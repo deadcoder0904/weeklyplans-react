@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <main className="h-100">
-        <Parallax ref="parallax" pages={5}>
+        <Parallax ref="parallax" pages={6}>
           <Parallax.Layer offset={0} speed={1} className="bg-gold" />
           <Parallax.Layer
             offset={1}
@@ -68,9 +68,8 @@ class App extends Component {
             speed={-0.1}
             style={styles.parallax}
             onClick={() => this.refs.parallax.scrollTo(2)}
-            className="flex justify-center items-center"
           >
-            <PageTwo title="First Impressions" />
+            <PageTwo />
           </Parallax.Layer>
 
           <Parallax.Layer
@@ -79,7 +78,7 @@ class App extends Component {
             style={styles.parallax}
             onClick={() => this.refs.parallax.scrollTo(3)}
           >
-            <PageTwo title="Add Plans" />
+            <PageTwo />
           </Parallax.Layer>
 
           <Parallax.Layer
@@ -87,18 +86,26 @@ class App extends Component {
             speed={-0.1}
             style={styles.parallax}
             onClick={() => this.refs.parallax.scrollTo(4)}
-            className="flex justify-center items-center"
           >
-            <PageTwo title="Check Plans" />
+            <PageTwo />
           </Parallax.Layer>
 
           <Parallax.Layer
             offset={4}
             speed={0.5}
             style={styles.parallax}
+            onClick={() => this.refs.parallax.scrollTo(5)}
+          >
+            <PageTwo />
+          </Parallax.Layer>
+
+          <Parallax.Layer
+            offset={5}
+            speed={-0.1}
+            style={styles.parallax}
             onClick={() => this.refs.parallax.scrollTo(0)}
           >
-            <PageTwo title="Add Future Plans" btn="true" />
+            <PageTwo btn={true} />
           </Parallax.Layer>
         </Parallax>
       </main>

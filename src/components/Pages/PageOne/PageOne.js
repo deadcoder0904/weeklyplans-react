@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../../assets/logo.png";
 
 const PageOne = () => (
-  <div className="absolute top-0">
+  <div className="">
     <header className="bg-gold sans-serif">
       <div className="mw9 center pa2 pt3-ns ph7-l">
         <img src={logo} alt="Logo" />
@@ -20,7 +20,8 @@ const PageOne = () => (
         <h5 className="ma1 f6 ttu tracked black-80">By Akshay Kadam</h5>
       </div>
     </header>
-    <div className="arrow animated bounce">
+    <div className="arrow animated bounce tc absolute left-0 right-0">
+      <h1 className="f1-l f6">Tap to Scroll</h1>
       <img
         width="40"
         height="40"

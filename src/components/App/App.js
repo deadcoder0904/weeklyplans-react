@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Parallax from "react-springy-parallax";
+import NotificationSystem from "react-notification-system";
 
 import PageOne from "../Pages/PageOne/index";
 import PageTwo from "../Pages/PageTwo/index";
@@ -8,6 +9,16 @@ import styles from "./styles";
 import imgs from "./imgs";
 
 class App extends Component {
+  componentDidMount() {
+    this._notificationSystem = this.refs.notificationSystem;
+    this._notificationSystem.addNotification({
+      message: "You can use this application offline too 😍",
+      level: "warning",
+      autoDismiss: 10,
+      position: "br"
+    });
+  }
+
   render() {
     return (
       <main className="h-100">
@@ -108,6 +119,7 @@ class App extends Component {
             <PageTwo btn={true} />
           </Parallax.Layer>
         </Parallax>
+        <NotificationSystem ref="notificationSystem" />
       </main>
     );
   }

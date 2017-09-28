@@ -14,8 +14,8 @@ class App extends Component {
     this._notificationSystem.addNotification({
       message: "You can use this application offline too 😍",
       level: "warning",
-      autoDismiss: 10,
-      position: "br"
+      autoDismiss: 5,
+      position: "bl"
     });
   }
 
